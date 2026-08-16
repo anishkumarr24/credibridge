@@ -1,0 +1,221 @@
+{
+  "workerProfile": {
+    "alias": "Sunita Devi",
+    "occupation": "Home-cleaning & domestic-help gigs",
+    "city": "Lucknow, Uttar Pradesh",
+    "platform": "HomeServe (local aggregator app)",
+    "tenure_start_date": "2025-06-16",
+    "self_reported_monthly_expenses": 9000,
+    "filled_required_fields": 9,
+    "total_required_fields": 10,
+    "distinct_income_payment_sources": 1
+  },
+  "earningsRecords": [
+    {
+      "month": "2025-12",
+      "amount": 14600
+    },
+    {
+      "month": "2026-01",
+      "amount": 15100
+    },
+    {
+      "month": "2026-02",
+      "amount": 14300
+    },
+    {
+      "month": "2026-03",
+      "amount": 15400
+    },
+    {
+      "month": "2026-04",
+      "amount": 15800
+    },
+    {
+      "month": "2026-05",
+      "amount": 15200
+    },
+    {
+      "month": "2026-06",
+      "amount": 16100
+    },
+    {
+      "month": "2026-07",
+      "amount": 16400
+    }
+  ],
+  "paymentRecords": [
+    {
+      "category": "RENT",
+      "amount": 3200,
+      "due_date": "2025-12-05",
+      "paid_date": "2025-12-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 420,
+      "due_date": "2025-12-15",
+      "paid_date": "2025-12-14",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 249,
+      "due_date": "2025-12-22",
+      "paid_date": "2025-12-21",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 3200,
+      "due_date": "2026-01-05",
+      "paid_date": "2026-01-05",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 480,
+      "due_date": "2026-01-15",
+      "paid_date": "2026-01-16",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 249,
+      "due_date": "2026-01-22",
+      "paid_date": "2026-01-22",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 3200,
+      "due_date": "2026-02-05",
+      "paid_date": "2026-02-07",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 390,
+      "due_date": "2026-02-15",
+      "paid_date": "2026-02-15",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 299,
+      "due_date": "2026-02-22",
+      "paid_date": "2026-02-23",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 3200,
+      "due_date": "2026-03-05",
+      "paid_date": "2026-03-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 460,
+      "due_date": "2026-03-15",
+      "paid_date": "2026-03-18",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 249,
+      "due_date": "2026-03-22",
+      "paid_date": "2026-03-22",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 3200,
+      "due_date": "2026-04-05",
+      "paid_date": "2026-04-05",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 510,
+      "due_date": "2026-04-15",
+      "paid_date": "2026-04-14",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 249,
+      "due_date": "2026-04-22",
+      "paid_date": "2026-04-21",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 3200,
+      "due_date": "2026-05-05",
+      "paid_date": "2026-05-06",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 440,
+      "due_date": "2026-05-15",
+      "paid_date": "2026-05-15",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 279,
+      "due_date": "2026-05-22",
+      "paid_date": "2026-05-24",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 3200,
+      "due_date": "2026-06-05",
+      "paid_date": "2026-06-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 400,
+      "due_date": "2026-06-15",
+      "paid_date": "2026-06-17",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 249,
+      "due_date": "2026-06-22",
+      "paid_date": "2026-06-22",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 3200,
+      "due_date": "2026-07-05",
+      "paid_date": "2026-07-05",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 470,
+      "due_date": "2026-07-15",
+      "paid_date": "2026-07-15",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 249,
+      "due_date": "2026-07-22",
+      "paid_date": "2026-07-22",
+      "unpaid_flag": false
+    }
+  ],
+  "loanApplication": {
+    "requested_amount": 58000,
+    "purpose": "Two sewing machines (straight-stitch + overlock) and fabric inventory to start a small tailoring micro-business"
+  }
+}

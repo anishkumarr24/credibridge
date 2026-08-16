@@ -1,0 +1,219 @@
+{
+  "workerProfile": {
+    "alias": "Farah Khan",
+    "occupation": "Home-based tailoring + WhatsApp/online tutoring",
+    "city": "Ahmedabad, Gujarat",
+    "platform": "UrbanStitch (marketplace) + informal tutoring clients",
+    "tenure_start_date": "2025-04-16",
+    "self_reported_monthly_expenses": 9000,
+    "filled_required_fields": 10,
+    "total_required_fields": 10,
+    "distinct_income_payment_sources": 2
+  },
+  "earningsRecords": [
+    {
+      "month": "2025-09",
+      "amount": 12000
+    },
+    {
+      "month": "2025-10",
+      "amount": 11500
+    },
+    {
+      "month": "2025-11",
+      "amount": 13500
+    },
+    {
+      "month": "2025-12",
+      "amount": 12800
+    },
+    {
+      "month": "2026-01",
+      "amount": 13000
+    },
+    {
+      "month": "2026-02",
+      "amount": 15200
+    },
+    {
+      "month": "2026-03",
+      "amount": 16500
+    },
+    {
+      "month": "2026-04",
+      "amount": 17800
+    },
+    {
+      "month": "2026-05",
+      "amount": 18200
+    },
+    {
+      "month": "2026-06",
+      "amount": 19000
+    },
+    {
+      "month": "2026-07",
+      "amount": 19800
+    }
+  ],
+  "paymentRecords": [
+    {
+      "category": "RENT",
+      "amount": 6800,
+      "due_date": "2025-09-07",
+      "paid_date": "2025-09-19",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1050,
+      "due_date": "2025-09-16",
+      "paid_date": "2025-09-29",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 6800,
+      "due_date": "2025-10-07",
+      "paid_date": "2025-10-25",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1180,
+      "due_date": "2025-10-16",
+      "paid_date": "2025-10-30",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 6800,
+      "due_date": "2025-11-07",
+      "paid_date": "2025-11-15",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1090,
+      "due_date": "2025-11-16",
+      "paid_date": "2025-11-25",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 6800,
+      "due_date": "2025-12-07",
+      "paid_date": "2025-12-22",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1160,
+      "due_date": "2025-12-16",
+      "paid_date": "2025-12-27",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 6800,
+      "due_date": "2026-01-07",
+      "paid_date": "2026-01-16",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1030,
+      "due_date": "2026-01-16",
+      "paid_date": "2026-01-23",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 6800,
+      "due_date": "2026-02-07",
+      "paid_date": "2026-02-11",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1140,
+      "due_date": "2026-02-16",
+      "paid_date": "2026-02-19",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 6800,
+      "due_date": "2026-03-07",
+      "paid_date": "2026-03-08",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1080,
+      "due_date": "2026-03-16",
+      "paid_date": "2026-03-17",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 6800,
+      "due_date": "2026-04-07",
+      "paid_date": "2026-04-07",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1170,
+      "due_date": "2026-04-16",
+      "paid_date": "2026-04-15",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 6800,
+      "due_date": "2026-05-07",
+      "paid_date": "2026-05-06",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1060,
+      "due_date": "2026-05-16",
+      "paid_date": "2026-05-16",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 6800,
+      "due_date": "2026-06-07",
+      "paid_date": "2026-06-07",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1150,
+      "due_date": "2026-06-16",
+      "paid_date": "2026-06-16",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 6800,
+      "due_date": "2026-07-07",
+      "paid_date": "2026-07-06",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1100,
+      "due_date": "2026-07-16",
+      "paid_date": "2026-07-15",
+      "unpaid_flag": false
+    }
+  ],
+  "loanApplication": {
+    "requested_amount": 30000,
+    "purpose": "Second sewing machine + fabric stock to take on more orders"
+  }
+}

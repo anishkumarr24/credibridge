@@ -1,0 +1,219 @@
+{
+  "workerProfile": {
+    "alias": "Arjun Meher",
+    "occupation": "Food-delivery rider (2-wheeler)",
+    "city": "Bengaluru, Karnataka",
+    "platform": "Swiggy",
+    "tenure_start_date": "2024-10-16",
+    "self_reported_monthly_expenses": 9500,
+    "filled_required_fields": 10,
+    "total_required_fields": 10,
+    "distinct_income_payment_sources": 2
+  },
+  "earningsRecords": [
+    {
+      "month": "2025-09",
+      "amount": 21200
+    },
+    {
+      "month": "2025-10",
+      "amount": 21850
+    },
+    {
+      "month": "2025-11",
+      "amount": 22100
+    },
+    {
+      "month": "2025-12",
+      "amount": 21600
+    },
+    {
+      "month": "2026-01",
+      "amount": 22450
+    },
+    {
+      "month": "2026-02",
+      "amount": 22900
+    },
+    {
+      "month": "2026-03",
+      "amount": 23150
+    },
+    {
+      "month": "2026-04",
+      "amount": 22700
+    },
+    {
+      "month": "2026-05",
+      "amount": 23550
+    },
+    {
+      "month": "2026-06",
+      "amount": 23850
+    },
+    {
+      "month": "2026-07",
+      "amount": 24300
+    }
+  ],
+  "paymentRecords": [
+    {
+      "category": "RENT",
+      "amount": 7000,
+      "due_date": "2025-09-05",
+      "paid_date": "2025-09-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 980,
+      "due_date": "2025-09-12",
+      "paid_date": "2025-09-12",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7000,
+      "due_date": "2025-10-05",
+      "paid_date": "2025-10-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1020,
+      "due_date": "2025-10-12",
+      "paid_date": "2025-10-15",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7000,
+      "due_date": "2025-11-05",
+      "paid_date": "2025-11-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 920,
+      "due_date": "2025-11-12",
+      "paid_date": "2025-11-12",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7000,
+      "due_date": "2025-12-05",
+      "paid_date": "2025-12-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1100,
+      "due_date": "2025-12-12",
+      "paid_date": "2025-12-12",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7000,
+      "due_date": "2026-01-05",
+      "paid_date": "2026-01-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1080,
+      "due_date": "2026-01-12",
+      "paid_date": "2026-01-14",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7000,
+      "due_date": "2026-02-05",
+      "paid_date": "2026-02-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1030,
+      "due_date": "2026-02-12",
+      "paid_date": "2026-02-12",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7000,
+      "due_date": "2026-03-05",
+      "paid_date": "2026-03-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 960,
+      "due_date": "2026-03-12",
+      "paid_date": "2026-03-12",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7000,
+      "due_date": "2026-04-05",
+      "paid_date": "2026-04-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1080,
+      "due_date": "2026-04-12",
+      "paid_date": "2026-04-12",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7000,
+      "due_date": "2026-05-05",
+      "paid_date": "2026-05-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1010,
+      "due_date": "2026-05-12",
+      "paid_date": "2026-05-12",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7000,
+      "due_date": "2026-06-05",
+      "paid_date": "2026-06-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 940,
+      "due_date": "2026-06-12",
+      "paid_date": "2026-06-12",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7000,
+      "due_date": "2026-07-05",
+      "paid_date": "2026-07-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1070,
+      "due_date": "2026-07-12",
+      "paid_date": "2026-07-12",
+      "unpaid_flag": false
+    }
+  ],
+  "loanApplication": {
+    "requested_amount": 45000,
+    "purpose": "Down payment on a replacement delivery scooter"
+  }
+}

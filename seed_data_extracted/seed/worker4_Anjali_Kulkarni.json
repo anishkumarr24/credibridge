@@ -1,0 +1,246 @@
+{
+  "workerProfile": {
+    "alias": "Anjali Kulkarni",
+    "occupation": "Quick-commerce delivery worker",
+    "city": "Pune, Maharashtra",
+    "platform": "Blinkit",
+    "tenure_start_date": "2025-10-16",
+    "self_reported_monthly_expenses": 8000,
+    "filled_required_fields": 9,
+    "total_required_fields": 10,
+    "distinct_income_payment_sources": 2
+  },
+  "earningsRecords": [
+    {
+      "month": "2025-11",
+      "amount": 14200
+    },
+    {
+      "month": "2025-12",
+      "amount": 12600
+    },
+    {
+      "month": "2026-01",
+      "amount": 15800
+    },
+    {
+      "month": "2026-02",
+      "amount": 13200
+    },
+    {
+      "month": "2026-03",
+      "amount": 16400
+    },
+    {
+      "month": "2026-04",
+      "amount": 12100
+    },
+    {
+      "month": "2026-05",
+      "amount": 15200
+    },
+    {
+      "month": "2026-06",
+      "amount": 11800
+    },
+    {
+      "month": "2026-07",
+      "amount": 15900
+    }
+  ],
+  "paymentRecords": [
+    {
+      "category": "RENT",
+      "amount": 7800,
+      "due_date": "2025-11-06",
+      "paid_date": "2025-11-06",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7800,
+      "due_date": "2025-12-06",
+      "paid_date": "2025-12-19",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7800,
+      "due_date": "2026-01-06",
+      "paid_date": "2026-01-14",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7800,
+      "due_date": "2026-02-06",
+      "paid_date": "2026-02-24",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7800,
+      "due_date": "2026-03-06",
+      "paid_date": "2026-03-15",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7800,
+      "due_date": "2026-04-06",
+      "paid_date": "2026-04-06",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7800,
+      "due_date": "2026-05-06",
+      "paid_date": "2026-05-20",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7800,
+      "due_date": "2026-06-06",
+      "paid_date": "2026-06-13",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 7800,
+      "due_date": "2026-07-06",
+      "paid_date": "2026-07-15",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1450,
+      "due_date": "2025-11-14",
+      "paid_date": "2025-11-15",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1620,
+      "due_date": "2025-12-14",
+      "paid_date": "2025-12-14",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1580,
+      "due_date": "2026-01-14",
+      "paid_date": "2026-01-27",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1690,
+      "due_date": "2026-02-14",
+      "paid_date": "2026-02-16",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1520,
+      "due_date": "2026-03-14",
+      "paid_date": "2026-03-14",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1610,
+      "due_date": "2026-04-14",
+      "paid_date": "2026-04-25",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1470,
+      "due_date": "2026-05-14",
+      "paid_date": "2026-05-17",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1650,
+      "due_date": "2026-06-14",
+      "paid_date": "2026-06-28",
+      "unpaid_flag": false
+    },
+    {
+      "category": "UTILITY",
+      "amount": 1580,
+      "due_date": "2026-07-14",
+      "paid_date": "2026-07-19",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 1800,
+      "due_date": "2025-11-10",
+      "paid_date": "2025-11-14",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 1800,
+      "due_date": "2025-12-10",
+      "paid_date": "2025-12-24",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 1850,
+      "due_date": "2026-01-10",
+      "paid_date": "2026-01-12",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 1800,
+      "due_date": "2026-02-10",
+      "paid_date": "2026-02-28",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 1750,
+      "due_date": "2026-03-10",
+      "paid_date": "2026-03-13",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 1800,
+      "due_date": "2026-04-10",
+      "paid_date": "2026-04-16",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 1850,
+      "due_date": "2026-05-10",
+      "paid_date": "2026-05-23",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 1800,
+      "due_date": "2026-06-10",
+      "paid_date": "2026-06-12",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 1800,
+      "due_date": "2026-07-10",
+      "paid_date": "2026-07-18",
+      "unpaid_flag": false
+    }
+  ],
+  "loanApplication": {
+    "requested_amount": 45000,
+    "purpose": "Used two-wheeler down payment (current bike broke down) plus a replacement smartphone for order tracking"
+  }
+}

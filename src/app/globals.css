@@ -1,0 +1,245 @@
+@import "tailwindcss";
+
+/*
+ * CrediBridge Design System
+ * Premium fintech design tokens using CSS custom properties.
+ * Supports light and dark themes via next-themes.
+ */
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-score-excellent: var(--score-excellent);
+  --color-score-very-good: var(--score-very-good);
+  --color-score-good: var(--score-good);
+  --color-score-moderate: var(--score-moderate);
+  --color-score-fair: var(--score-fair);
+  --color-score-needs-improvement: var(--score-needs-improvement);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --radius: var(--radius);
+}
+
+:root {
+  /* ── Radius ─────────────────────────────── */
+  --radius: 0.625rem;
+
+  /* ── Light Theme Colors ─────────────────── */
+  --background: oklch(0.99 0.002 240);
+  --foreground: oklch(0.14 0.02 260);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.14 0.02 260);
+
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.14 0.02 260);
+
+  --primary: oklch(0.45 0.18 264);
+  --primary-foreground: oklch(0.98 0.005 264);
+
+  --secondary: oklch(0.95 0.01 260);
+  --secondary-foreground: oklch(0.20 0.02 260);
+
+  --muted: oklch(0.96 0.005 260);
+  --muted-foreground: oklch(0.50 0.02 260);
+
+  --accent: oklch(0.95 0.01 260);
+  --accent-foreground: oklch(0.20 0.02 260);
+
+  --destructive: oklch(0.55 0.22 27);
+  --destructive-foreground: oklch(0.98 0.005 27);
+
+  --border: oklch(0.91 0.005 260);
+  --input: oklch(0.91 0.005 260);
+  --ring: oklch(0.45 0.18 264);
+
+  /* ── Score Colors ───────────────────────── */
+  --score-excellent: oklch(0.65 0.18 290);
+  --score-very-good: oklch(0.60 0.18 255);
+  --score-good: oklch(0.62 0.19 145);
+  --score-moderate: oklch(0.75 0.16 85);
+  --score-fair: oklch(0.70 0.18 50);
+  --score-needs-improvement: oklch(0.60 0.22 27);
+
+  /* ── Chart Colors ───────────────────────── */
+  --chart-1: oklch(0.55 0.18 264);
+  --chart-2: oklch(0.62 0.19 145);
+  --chart-3: oklch(0.70 0.18 50);
+  --chart-4: oklch(0.65 0.18 290);
+  --chart-5: oklch(0.60 0.22 27);
+
+  /* ── Sidebar (for dashboard) ────────────── */
+  --sidebar: oklch(0.98 0.003 260);
+  --sidebar-foreground: oklch(0.30 0.02 260);
+  --sidebar-primary: oklch(0.45 0.18 264);
+  --sidebar-primary-foreground: oklch(0.98 0.005 264);
+  --sidebar-accent: oklch(0.94 0.01 260);
+  --sidebar-accent-foreground: oklch(0.20 0.02 260);
+  --sidebar-border: oklch(0.91 0.005 260);
+  --sidebar-ring: oklch(0.45 0.18 264);
+}
+
+.dark {
+  /* ── Dark Theme Colors ──────────────────── */
+  --background: oklch(0.12 0.015 260);
+  --foreground: oklch(0.93 0.005 260);
+
+  --card: oklch(0.16 0.015 260);
+  --card-foreground: oklch(0.93 0.005 260);
+
+  --popover: oklch(0.16 0.015 260);
+  --popover-foreground: oklch(0.93 0.005 260);
+
+  --primary: oklch(0.65 0.18 264);
+  --primary-foreground: oklch(0.12 0.02 264);
+
+  --secondary: oklch(0.22 0.015 260);
+  --secondary-foreground: oklch(0.90 0.005 260);
+
+  --muted: oklch(0.22 0.015 260);
+  --muted-foreground: oklch(0.60 0.01 260);
+
+  --accent: oklch(0.22 0.015 260);
+  --accent-foreground: oklch(0.90 0.005 260);
+
+  --destructive: oklch(0.55 0.22 27);
+  --destructive-foreground: oklch(0.98 0.005 27);
+
+  --border: oklch(0.26 0.015 260);
+  --input: oklch(0.26 0.015 260);
+  --ring: oklch(0.65 0.18 264);
+
+  /* ── Score Colors (Dark) ────────────────── */
+  --score-excellent: oklch(0.72 0.18 290);
+  --score-very-good: oklch(0.67 0.18 255);
+  --score-good: oklch(0.68 0.19 145);
+  --score-moderate: oklch(0.78 0.16 85);
+  --score-fair: oklch(0.75 0.18 50);
+  --score-needs-improvement: oklch(0.65 0.22 27);
+
+  /* ── Chart Colors (Dark) ────────────────── */
+  --chart-1: oklch(0.65 0.18 264);
+  --chart-2: oklch(0.68 0.19 145);
+  --chart-3: oklch(0.75 0.18 50);
+  --chart-4: oklch(0.72 0.18 290);
+  --chart-5: oklch(0.65 0.22 27);
+
+  /* ── Sidebar (Dark) ────────────────────── */
+  --sidebar: oklch(0.14 0.015 260);
+  --sidebar-foreground: oklch(0.85 0.005 260);
+  --sidebar-primary: oklch(0.65 0.18 264);
+  --sidebar-primary-foreground: oklch(0.12 0.02 264);
+  --sidebar-accent: oklch(0.20 0.015 260);
+  --sidebar-accent-foreground: oklch(0.90 0.005 260);
+  --sidebar-border: oklch(0.26 0.015 260);
+  --sidebar-ring: oklch(0.65 0.18 264);
+}
+
+/*
+ * ── Base Styles ──────────────────────────────
+ */
+
+@layer base {
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Smooth scrolling with reduced-motion respect */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Focus styles for accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+}
+
+/*
+ * ── Utility Classes ──────────────────────────
+ */
+
+@layer utilities {
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Gradient text */
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      135deg,
+      var(--primary) 0%,
+      var(--chart-4) 100%
+    );
+  }
+
+  /* Glass card effect */
+  .glass {
+    backdrop-filter: blur(12px) saturate(180%);
+    background-color: oklch(1 0 0 / 0.72);
+  }
+  .dark .glass {
+    background-color: oklch(0.16 0.015 260 / 0.72);
+  }
+}

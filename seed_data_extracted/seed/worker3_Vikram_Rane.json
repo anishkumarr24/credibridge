@@ -1,0 +1,201 @@
+{
+  "workerProfile": {
+    "alias": "Vikram Rane",
+    "occupation": "Ride-hailing car driver",
+    "city": "Mumbai, Maharashtra",
+    "platform": "Ola / Uber (multi-app)",
+    "tenure_start_date": "2024-02-16",
+    "self_reported_monthly_expenses": 22000,
+    "filled_required_fields": 10,
+    "total_required_fields": 10,
+    "distinct_income_payment_sources": 2
+  },
+  "earningsRecords": [
+    {
+      "month": "2025-10",
+      "amount": 42000
+    },
+    {
+      "month": "2025-11",
+      "amount": 39500
+    },
+    {
+      "month": "2025-12",
+      "amount": 44200
+    },
+    {
+      "month": "2026-01",
+      "amount": 36800
+    },
+    {
+      "month": "2026-02",
+      "amount": 33500
+    },
+    {
+      "month": "2026-03",
+      "amount": 31200
+    },
+    {
+      "month": "2026-04",
+      "amount": 29400
+    },
+    {
+      "month": "2026-05",
+      "amount": 27600
+    },
+    {
+      "month": "2026-06",
+      "amount": 25800
+    },
+    {
+      "month": "2026-07",
+      "amount": 24500
+    }
+  ],
+  "paymentRecords": [
+    {
+      "category": "RENT",
+      "amount": 16000,
+      "due_date": "2025-10-05",
+      "paid_date": "2025-10-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 16000,
+      "due_date": "2025-11-05",
+      "paid_date": "2025-11-07",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 16000,
+      "due_date": "2025-12-05",
+      "paid_date": "2025-12-13",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 16000,
+      "due_date": "2026-01-05",
+      "paid_date": "2026-01-23",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 16000,
+      "due_date": "2026-02-05",
+      "paid_date": "2026-02-27",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 16000,
+      "due_date": "2026-03-05",
+      "paid_date": "2026-03-30",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 16000,
+      "due_date": "2026-04-05",
+      "paid_date": "2026-04-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 16000,
+      "due_date": "2026-05-05",
+      "paid_date": "2026-06-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "RENT",
+      "amount": 16000,
+      "due_date": "2026-06-05",
+      "paid_date": null,
+      "unpaid_flag": true
+    },
+    {
+      "category": "RENT",
+      "amount": 16000,
+      "due_date": "2026-07-05",
+      "paid_date": "2026-07-17",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 9500,
+      "due_date": "2025-10-15",
+      "paid_date": "2025-10-15",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 9500,
+      "due_date": "2025-11-15",
+      "paid_date": "2025-11-14",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 9500,
+      "due_date": "2025-12-15",
+      "paid_date": "2025-12-20",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 9500,
+      "due_date": "2026-01-15",
+      "paid_date": "2026-01-25",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 9500,
+      "due_date": "2026-02-15",
+      "paid_date": "2026-03-03",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 9500,
+      "due_date": "2026-03-15",
+      "paid_date": "2026-04-04",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 9500,
+      "due_date": "2026-04-15",
+      "paid_date": "2026-04-19",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 9500,
+      "due_date": "2026-05-15",
+      "paid_date": "2026-05-24",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 9500,
+      "due_date": "2026-06-15",
+      "paid_date": "2026-07-02",
+      "unpaid_flag": false
+    },
+    {
+      "category": "OTHER_RECURRING",
+      "amount": 9500,
+      "due_date": "2026-07-15",
+      "paid_date": "2026-08-05",
+      "unpaid_flag": false
+    }
+  ],
+  "loanApplication": {
+    "requested_amount": 80000,
+    "purpose": "Major vehicle repair (transmission) to keep the car roadworthy"
+  }
+}

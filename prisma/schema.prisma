@@ -1,0 +1,351 @@
+// CrediBridge — Prisma Schema
+// Database: PostgreSQL
+// Run `npx prisma migrate dev` after changes.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ──────────────────────────────────────────────
+//  Authentication & Users
+// ──────────────────────────────────────────────
+
+enum Role {
+  WORKER
+  LENDER
+  ADMIN
+}
+
+model User {
+  id             String    @id @default(cuid())
+  email          String    @unique
+  name           String
+  passwordHash   String
+  role           Role      @default(WORKER)
+  emailVerified  Boolean   @default(false)
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  workerProfile  WorkerProfile?
+  lenderProfile  LenderProfile?
+  notifications  Notification[]
+  auditLogs      AuditLog[]
+  consentRecords ConsentRecord[]
+
+  @@index([email])
+  @@index([role])
+}
+
+// ──────────────────────────────────────────────
+//  Worker Profile
+// ──────────────────────────────────────────────
+
+model WorkerProfile {
+  id              String   @id @default(cuid())
+  userId          String   @unique
+  phone           String?
+  location        String?
+  occupationType  String?
+  primaryPlatform String?
+  platformTenure  Int?     // months
+  monthlyExpenses Float?
+  onboarded       Boolean  @default(false)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  user             User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  financialSources FinancialSource[]
+  earningRecords   EarningRecord[]
+  paymentRecords   PaymentRecord[]
+  scores           Score[]
+  creditProfiles   CreditProfile[]
+  applications     Application[]
+
+  @@index([userId])
+}
+
+// ──────────────────────────────────────────────
+//  Lender Profile
+// ──────────────────────────────────────────────
+
+model LenderProfile {
+  id              String   @id @default(cuid())
+  userId          String   @unique
+  organisation    String?
+  licenseNumber   String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  user         User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  applications Application[]
+
+  @@index([userId])
+}
+
+// ──────────────────────────────────────────────
+//  Financial Data Sources
+// ──────────────────────────────────────────────
+
+enum DataSourceType {
+  CSV_UPLOAD
+  MANUAL_ENTRY
+  SYNTHETIC
+}
+
+enum DataCategory {
+  GIG_EARNINGS
+  UTILITY_PAYMENTS
+  RENT_PAYMENTS
+  OTHER_RECURRING
+}
+
+model FinancialSource {
+  id            String         @id @default(cuid())
+  profileId     String
+  category      DataCategory
+  sourceType    DataSourceType
+  fileName      String?
+  recordCount   Int            @default(0)
+  dataQuality   String?        // "Excellent" | "Good" | "Needs Attention"
+  latestDate    DateTime?
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+
+  profile WorkerProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+
+  @@index([profileId])
+  @@index([category])
+}
+
+// ──────────────────────────────────────────────
+//  Earning Records
+// ──────────────────────────────────────────────
+
+model EarningRecord {
+  id            String   @id @default(cuid())
+  profileId     String
+  date          DateTime
+  platform      String?
+  grossEarnings Float
+  incentives    Float    @default(0)
+  deductions    Float    @default(0)
+  netEarnings   Float
+  workingHours  Float?
+  trips         Int?
+  sourceId      String?
+  createdAt     DateTime @default(now())
+
+  profile WorkerProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+
+  @@index([profileId, date])
+  @@index([profileId])
+}
+
+// ──────────────────────────────────────────────
+//  Payment Records
+// ──────────────────────────────────────────────
+
+enum PaymentStatus {
+  PAID
+  LATE
+  MISSED
+  PENDING
+}
+
+model PaymentRecord {
+  id        String        @id @default(cuid())
+  profileId String
+  category  String        // "utility", "rent", "subscription", etc.
+  amount    Float
+  dueDate   DateTime
+  paidDate  DateTime?
+  status    PaymentStatus
+  sourceId  String?
+  createdAt DateTime      @default(now())
+
+  profile WorkerProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+
+  @@index([profileId, dueDate])
+  @@index([profileId])
+}
+
+// ──────────────────────────────────────────────
+//  Scoring
+// ──────────────────────────────────────────────
+
+model Score {
+  id              String        @id @default(cuid())
+  profileId       String
+  totalScore      Float
+  bandLabel       String
+  confidence      Float         // 0-100
+  engineVersion   String
+  calculatedAt    DateTime      @default(now())
+
+  factors         ScoreFactor[]
+  recommendations Recommendation[]
+  profile         WorkerProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+
+  @@index([profileId, calculatedAt])
+  @@index([profileId])
+}
+
+model ScoreFactor {
+  id               String  @id @default(cuid())
+  scoreId          String
+  factorKey        String  // "incomeConsistency" etc.
+  factorLabel      String
+  rawScore         Float   // 0-100
+  weight           Float
+  contribution     Float   // weighted points
+  explanation      String
+  evidenceJson     String? // JSON blob of evidence data
+  isPositive       Boolean @default(true)
+
+  score Score @relation(fields: [scoreId], references: [id], onDelete: Cascade)
+
+  @@index([scoreId])
+}
+
+// ──────────────────────────────────────────────
+//  Recommendations
+// ──────────────────────────────────────────────
+
+model Recommendation {
+  id          String @id @default(cuid())
+  scoreId     String
+  factorKey   String
+  title       String
+  description String
+  priority    Int    @default(0) // higher = more impactful
+
+  score Score @relation(fields: [scoreId], references: [id], onDelete: Cascade)
+
+  @@index([scoreId])
+}
+
+// ──────────────────────────────────────────────
+//  Credit Profile / Report
+// ──────────────────────────────────────────────
+
+model CreditProfile {
+  id            String   @id @default(cuid())
+  profileId     String
+  scoreId       String
+  shareToken    String   @unique @default(cuid())
+  generatedAt   DateTime @default(now())
+  expiresAt     DateTime?
+
+  profile WorkerProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+
+  @@index([profileId])
+  @@index([shareToken])
+}
+
+// ──────────────────────────────────────────────
+//  Lender Applications
+// ──────────────────────────────────────────────
+
+enum ApplicationStatus {
+  SUBMITTED
+  UNDER_REVIEW
+  APPROVED
+  DECLINED
+  MORE_INFO_NEEDED
+}
+
+model Application {
+  id          String            @id @default(cuid())
+  profileId   String
+  lenderId    String?
+  status      ApplicationStatus @default(SUBMITTED)
+  notes       String?
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+
+  worker WorkerProfile  @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  lender LenderProfile?  @relation(fields: [lenderId], references: [id])
+
+  requestedAmount Float?
+
+  @@index([profileId])
+  @@index([lenderId])
+  @@index([status])
+}
+
+// ──────────────────────────────────────────────
+//  Consent
+// ──────────────────────────────────────────────
+
+model ConsentRecord {
+  id          String   @id @default(cuid())
+  userId      String
+  consentType String   // "data_processing", "scoring", "sharing"
+  granted     Boolean
+  grantedAt   DateTime @default(now())
+  revokedAt   DateTime?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+// ──────────────────────────────────────────────
+//  Notifications
+// ──────────────────────────────────────────────
+
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  title     String
+  message   String
+  read      Boolean  @default(false)
+  type      String   // "score_update", "data_import", "lender_request", etc.
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, read])
+  @@index([userId])
+}
+
+// ──────────────────────────────────────────────
+//  Audit Log
+// ──────────────────────────────────────────────
+
+model AuditLog {
+  id          String   @id @default(cuid())
+  userId      String?
+  action      String   // "score_calculated", "data_imported", "profile_shared", etc.
+  entityType  String?  // "Score", "EarningRecord", etc.
+  entityId    String?
+  metadata    String?  // JSON
+  ipAddress   String?
+  createdAt   DateTime @default(now())
+
+  user User? @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+  @@index([action])
+  @@index([createdAt])
+}
+
+// ──────────────────────────────────────────────
+//  Synthetic Data Tracking
+// ──────────────────────────────────────────────
+
+model SyntheticDataset {
+  id          String   @id @default(cuid())
+  preset      String   // "stable_worker", "seasonal_worker", etc.
+  seed        Int?
+  profileId   String?
+  recordCount Int      @default(0)
+  createdAt   DateTime @default(now())
+
+  @@index([preset])
+}

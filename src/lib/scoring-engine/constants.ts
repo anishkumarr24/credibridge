@@ -1,0 +1,36 @@
+export const SCORING_CONSTANTS = {
+  WEIGHTS_PCT: {
+    income: 29.7,
+    payment: 25.2,
+    trend: 19.8,
+    tenure: 15.3,
+    obm: 10.0,
+  },
+  CV_BREAKPOINTS: [
+    { value: 0.00, score: 100 },
+    { value: 0.15, score: 90 },
+    { value: 0.30, score: 75 },
+    { value: 0.50, score: 55 },
+    { value: 0.80, score: 30 },
+    { value: 1.20, score: 10 },
+  ],
+  TREND_BREAKPOINTS: [
+    { value: -8, score: 10 },
+    { value: -3, score: 35 },
+    { value: -1, score: 60 },
+    { value: 0, score: 70 },
+    { value: 3, score: 100 },
+  ],
+  PRIOR: 70,
+  SHRINKAGE_K_INCOME: 3,
+  SHRINKAGE_K_PAYMENT: 5,
+  SHRINKAGE_K_TREND: 3,
+  TENURE_CAP_MONTHS: 36,
+  BANDS: [
+    { min: 750, max: 900, label: "Very Strong" },
+    { min: 650, max: 749, label: "Strong" },
+    { min: 500, max: 649, label: "Moderate" },
+    { min: 350, max: 499, label: "Emerging" },
+    { min: 0, max: 349, label: "Building History" },
+  ],
+};
