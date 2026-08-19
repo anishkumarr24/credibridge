@@ -4,7 +4,6 @@
 
 CrediBridge is an Explainable Micro-Credit Scoring Web Platform for Gig Workers and Informal-Sector Earners. It provides an alternative credit-scoring mechanism based on financial behaviour like gig earnings, utility payments, and work tenure, completely bypassing the traditional black-box bureau scoring.
 
-Built for SIH 2026.
 
 ## Problem Statement
 
@@ -51,4 +50,3 @@ The score is NOT a black box. Every major score contribution is visible, underst
 
 - `docs/SCORING_METHODOLOGY.md` - Details the scoring logic and weights.
 - `docs/ARCHITECTURE.md` - System design and technical choices.
-- `docs/DEMO_GUIDE.md` - How to run the SIH 2026 demonstration.
